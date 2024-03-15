@@ -1,0 +1,19 @@
+Set-ExecutionPolicy Unrestricted -> no powershell como adm
+------------------------------------------------------------------
+python -m venv env -> criar o ambiente virtual
+env\Scripts\Activate -> ativar o ambiente virtual
+
+IMPORTA AS DEPENDENCIAS -> pip freeze
+instalar pacote de migraçoes -> pip install Flask_Migrations
+instalar o pacote de form -> pip install Flask_sqlalchemy
+
+------------------------------------------------------------------
+
+criar o user 
+banco de dados : sqlite
+flask db init -> iniciar o banco de dados
+flask db migrate -> gerar as migraçoes
+flask db upgrade -> criar o data.db e aplicar as migraçoes no banco de dados
+
+importa o banco de dados no (dbeaver)
+-------------------------------------------------------------------
